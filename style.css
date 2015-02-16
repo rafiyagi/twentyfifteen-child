@@ -1,0 +1,34 @@
+/*
+Theme Name:   Twenty Fifteen Child
+Theme URI:    http://example.com/twenty-fifteen-child/
+Description:  Twenty Fifteen Child Theme
+Author:       rafdizzle86
+Author URI:   http://example.com
+Template:     twentyfifteen
+Version:      1.0.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain:  twenty-fifteen-child
+
+A couple things to note:
+
+You will need to replace the example text with the details relevant to your theme.
+The Template line corresponds to the directory name of the parent theme. The parent theme
+in our example is the Twenty Fifteen theme, so the Template will be twentyfifteen.
+You may be working with a different theme, so adjust accordingly. The only required child theme file is style.css,
+but functions.php is necessary to enqueue styles correctly (below).
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  font-family: fantasy;
+}
+
+.page-template-page-fullwidth::before{
+  content: none;
+}
+
+.page-template-page-fullwidth .site-content{
+ margin-left: 0px;
+ width: inherit;
+}

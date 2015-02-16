@@ -26,7 +26,7 @@
 <body <?php body_class(); ?>>
 <div id="page-full" class="hfeed site">
     <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyfifteen' ); ?></a>
-
+    <div class="header-page-fullwidth">
         <div class="site-branding">
             <?php
             if ( is_front_page() && is_home() ) : ?>
@@ -42,7 +42,18 @@
             ?>
             <button class="secondary-toggle"><?php _e( 'Menu and widgets', 'twentyfifteen' ); ?></button>
         </div><!-- .site-branding -->
-
+        <?php if ( has_nav_menu( 'primary' ) ) : ?>
+            <nav id="site-navigation" class="main-navigation" role="navigation">
+                <?php
+                // Primary navigation menu.
+                wp_nav_menu( array(
+                    'menu_class'     => 'nav-menu',
+                    'theme_location' => 'primary',
+                ) );
+                ?>
+            </nav><!-- .main-navigation -->
+        <?php endif; ?>
+    </div>
     <div id="content" class="site-content">
         <div id="primary" class="content-area">
             <main id="main" class="site-main" role="main">

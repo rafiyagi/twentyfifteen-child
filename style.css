@@ -24,11 +24,25 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-family: fantasy;
 }
 
+.header-page-fullwidth{
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+.header-page-fullwidth .main-navigation{
+ margin: 0 20% 0%;
+}
+
 .page-template-page-fullwidth::before{
   content: none;
 }
 
 .page-template-page-fullwidth .site-content{
- margin-left: 0px;
- width: inherit;
+  margin-left: 0px;
+  width: inherit;
+}
+
+.page-template-page-fullwidth .site-content .site-main{
+ padding: 2.3333% 0%;
 }

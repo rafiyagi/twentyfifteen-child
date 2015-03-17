@@ -24,6 +24,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-family: fantasy;
 }
 
+body::before {
+	background-color: red;
+	width: 100% !important;
+}
+.site-content {
+	margin: 0;
+	width: 100%;
+}
 .header-page-fullwidth{
   padding: 20px;
   background: white;
@@ -45,4 +53,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .page-template-page-fullwidth .site-content .site-main{
  padding: 2.3333% 0%;
+}
+
+#sidebar {
+	display: none;
 }
